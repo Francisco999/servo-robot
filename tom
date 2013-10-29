@@ -1,0 +1,25 @@
+// for declaring and instantiating variables
+
+
+void setup() {
+//set pinModes
+//syntax pinMode(13, OUTPUT);
+
+pinMode(9, INPUT);
+pinMode(13, OUTPUT);
+//syntax Serial.begin(9600);
+}
+
+void loop() {
+//digitalWrite(13, HIGH);
+
+
+int tom = digitalRead(9);
+if ( tom == 1){
+digitalWrite(13, HIGH);
+}
+else {
+  digitalWrite(13, LOW);
+}
+}
+
